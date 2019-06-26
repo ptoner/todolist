@@ -34,7 +34,8 @@ export namespace Global {
 
     //Page Controllers
     Global.settingsController = new SettingsController(Global.settingsService)
-    Global.todoService = new TodoService()
+    Global.homeController = new HomeController(null)
+    // Global.todoService = new TodoService()
 
 
     //Make controllers available in window so framework7 components can access them
