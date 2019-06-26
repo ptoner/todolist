@@ -1,0 +1,64 @@
+<!--suppress JSAnnotator -->
+<template>
+
+  <div class="page" data-name="home">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+            <div class="title">
+                <div class="title-name">Todo</div>
+              </div>
+        </div>
+        <div class="right">
+            <a class="link" href="/settings">
+              <i class="f7-icons">gear_fill</i>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div id="home-page-infinite-scroll" class="page-content infinite-scroll-content row">
+
+      <div class="col-100 tablet-50 center">
+        
+        <div class="block-title">Todo</div>
+        <div class="list media-list">
+          <ul id="todo-list">
+
+            <div class="no-results">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">
+                    Nothing to do.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</template>
+
+
+
+
+
+
+<script>
+  return {
+    on: {
+      pageInit: async function (e, page) {
+      }
+    }
+  }
+</script>
+
+
+
+
