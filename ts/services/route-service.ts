@@ -186,7 +186,6 @@ class RouteService {
       await this.initialize()
       this.resolveController(resolve, successFunction())
     } catch(ex) {
-      console.log(ex)
       Global.showExceptionPopup(ex)
       Global.navigate("/settings")
     }

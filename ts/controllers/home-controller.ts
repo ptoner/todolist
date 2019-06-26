@@ -7,6 +7,7 @@ var $$ = Dom7;
 class HomeController {
 
   constructor(
+    private todoService: TodoService
   ) {}
 
   async showHomePage(): Promise<ModelView> {
@@ -14,6 +15,17 @@ class HomeController {
     return new ModelView({}, 'pages/home.html')
 
   }
+
+  async buildList() : Promise<void> {
+
+    let list = await this.todoService.list()
+
+
+
+
+  }
+
+
 
 
 

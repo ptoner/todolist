@@ -15,6 +15,8 @@ export namespace Global {
   export var homeController: HomeController
   export var settingsController: SettingsController
 
+  export var todoService:TodoService
+
   export var queueService: QueueService
   export var routeService: RouteService
   export var templateService: TemplateService
@@ -32,7 +34,7 @@ export namespace Global {
 
     //Page Controllers
     Global.settingsController = new SettingsController(Global.settingsService)
-    Global.homeController = new HomeController()
+    Global.todoService = new TodoService()
 
 
     //Make controllers available in window so framework7 components can access them
