@@ -20,7 +20,15 @@ class HomeController {
 
     let list = await this.todoService.list()
 
+    // let template = `
+    //   <li 
+    // `
 
+
+
+    // for (let post of posts) {
+    //   $$(listSelector).append(postTemplate(post))
+    // }
 
 
   }
